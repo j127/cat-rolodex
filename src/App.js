@@ -19,6 +19,10 @@ class App extends Component {
     }
 
     render() {
+        const { cats, searchField } = this.state;
+        const filteredCats = cats.filter(cat =>
+            cat.name.toLowerCase().includes(searchField.toLowerCase())
+        );
         return (
             <section className="App">
                 <input
@@ -30,7 +34,7 @@ class App extends Component {
                         )
                     }
                 />{" "}
-                <CardList cats={this.state.cats} />
+                <CardList cats={filteredCats} />
             </section>
         );
     }
