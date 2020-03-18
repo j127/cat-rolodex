@@ -2,7 +2,7 @@ import React from "react";
 import "./card-list.styles.css";
 import Card from "../card/card.component";
 
-export const CardList = ({ cats }) => {
+export default function CardList({ cats }) {
     return (
         <div className="card-list">
             {cats.map(c => (
@@ -10,4 +10,4 @@ export const CardList = ({ cats }) => {
             ))}
         </div>
     );
-};
+}
