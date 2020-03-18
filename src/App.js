@@ -8,6 +8,7 @@ class App extends Component {
 
         this.state = {
             cats: [],
+            searchField: "",
         };
     }
 
@@ -20,6 +21,15 @@ class App extends Component {
     render() {
         return (
             <section className="App">
+                <input
+                    type="search"
+                    placeholder="search cats"
+                    onChange={e =>
+                        this.setState({ searchField: e.target.value }, () =>
+                            console.log(this.state)
+                        )
+                    }
+                />{" "}
                 <CardList cats={this.state.cats} />
             </section>
         );
