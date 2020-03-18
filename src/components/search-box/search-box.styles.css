@@ -1,9 +1,22 @@
+.search-wrapper {
+    /* border: 1px solid #eee; */
+}
 .search {
     -webkit-appearance: none;
-    border: none;
+    border: 1px solid #666;
     outline: none;
     padding: 10px;
     width: 150px;
     line-height: 30px;
     margin-bottom: 30px;
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+}
+
+label {
+    color: #ccc;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }

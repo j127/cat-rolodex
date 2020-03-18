@@ -24,10 +24,11 @@ class App extends Component {
         const filteredCats = cats.filter(cat =>
             cat.name.toLowerCase().includes(searchField.toLowerCase())
         );
+
         return (
             <section className="App">
+                <h1>Cat Rolodex</h1>
                 <SearchBox
-                    placeholder="search cats"
                     handleChange={e =>
                         this.setState({ searchField: e.target.value }, () =>
                             console.log(this.state)
