@@ -33,7 +33,7 @@ class App extends Component {
 
         return (
             <section className="App">
-                <h1>Cat Rolodex</h1>
+                <h1 className="page-title">Cat Rolodex</h1>
                 <SearchBox handleChange={this.handleChange} />
                 <CardList cats={filteredCats} />
             </section>

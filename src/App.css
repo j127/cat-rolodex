@@ -3,7 +3,8 @@ body {
     text-align: center;
 }
 
-h1 {
+h1.page-title {
     color: #eee;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: Anton, Helvetica, sans-serif;
+    font-size: 2em;
 }
