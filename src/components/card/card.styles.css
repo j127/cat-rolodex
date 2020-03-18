@@ -8,8 +8,8 @@
     cursor: pointer;
     -mox-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: transform(0.25s ease-out);
+    /* transform: translateZ(0); */
+    /* transition: transform(0.25s ease-out); */
     font-family: "Open Sans", Helvetica, sans-serif;
 }
 
