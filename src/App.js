@@ -19,6 +19,12 @@ class App extends Component {
             .then(json => this.setState({ cats: json }));
     }
 
+    handleChange = e => {
+        this.setState({ searchField: e.target.value }, () =>
+            console.log(this.state)
+        );
+    };
+
     render() {
         const { cats, searchField } = this.state;
         const filteredCats = cats.filter(cat =>
@@ -28,13 +34,7 @@ class App extends Component {
         return (
             <section className="App">
                 <h1>Cat Rolodex</h1>
-                <SearchBox
-                    handleChange={e =>
-                        this.setState({ searchField: e.target.value }, () =>
-                            console.log(this.state)
-                        )
-                    }
-                />
+                <SearchBox handleChange={this.handleChange} />
                 <CardList cats={filteredCats} />
             </section>
         );
